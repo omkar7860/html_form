@@ -5,15 +5,23 @@
   overflow-x:hidden;
   overflow-y:auto;
 }
+.frontpage{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
 .background{
-    width:900px;
-    height:430px;
-  
+    flex-basis:900px;
+    order: 1;
 }
 .foreground{
-    width:900px;
-    height:430px;
+    flex-basis:900px;
+    order: 1;
+    position:absolute;
 }
-/* #title{
-    color: azure;
-} */
+#title{
+   position:relative;
+   top:100px;
+   /* bottom:50px; */
+   left:550px;
+}
